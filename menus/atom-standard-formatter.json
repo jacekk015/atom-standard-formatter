@@ -1,0 +1,18 @@
+{
+  "context-menu": {
+    "atom-text-editor[data-grammar='source js']": [{
+      "label": "Standard Format Code",
+      "command": "atom-standard-formatter:format"
+    }]
+  },
+  "menu": [{
+    "label": "Packages",
+    "submenu": [{
+      "label": "Standard Formatter",
+      "submenu": [{
+        "label": "Format",
+        "command": "atom-standard-formatter:format"
+      }]
+    }]
+  }]
+}
