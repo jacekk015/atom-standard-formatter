@@ -10,9 +10,7 @@
     "formatter",
     "prettier"
   ],
-  "activationCommands": {
-    "atom-workspace": "atom-standard-formatter:format"
-  },
+  "activationCommands": {},
   "repository": "https://github.com/jacekk015/atom-standard-formatter",
   "license": "MIT",
   "engines": {
