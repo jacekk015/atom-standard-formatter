@@ -1,7 +1,7 @@
 
 # atom-standard-formatter
 
-Atom package to format your Javascript using [Standard Style](https://github.com/feross/standard), [Semi-Standard Style](https://github.com/Flet/semistandard)
+Atom package to format your Javascript using [Standard Style](https://github.com/standard/standard), [Semi-Standard Style](https://github.com/Flet/semistandard)
 
 ![](https://cloud.githubusercontent.com/assets/5852428/8020717/adbf10c0-0c51-11e5-8537-2714c9f698e5.gif)
 
@@ -18,6 +18,10 @@ Automatically format your Javascript file on save by enabling the _Format On Sav
 #### Menu
 
 _Packages &gt; Standard Formatter &gt; Format_
+
+#### Context menu
+
+_Standard Format Code_
 
 ### Settings
 
@@ -36,7 +40,6 @@ Check code style in package.json `devDependencies`. If a valid style is not foun
 Choose the style formatter module you want to use. If `checkStyleDevDependencies` is `true` this setting will be ignored.
 
 * [standard](https://github.com/feross/standard) - equivalent to running `standard --fix`
-
 * [semi-standard](https://github.com/Flet/semistandard) - equivalent to running `semistandard --fix`
 
 #### honorPackageConfig \(default: true\)
@@ -45,12 +48,14 @@ Don't auto-format files included in the package.json's `"ignore"` configuration 
 
 \| Note: This will use the nearest package.json
 
+#### usePrettier \(default: true\)
+Formats code with Prettier before Standard format
+
 ### A note on formatting
 
 This package relies on the excellent work from the following modules to perform formatting:
 
 * [standard](https://github.com/feross/standard)
-
 * [semi-standard](https://github.com/Flet/semistandard)
 
 Code based on the https://github.com/standard/atom-standard-formatter package. Changes made:
